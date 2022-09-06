@@ -1,0 +1,378 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Animation intro with video*/
+
+.anima--div {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: black;
+  opacity: 0;
+
+  overflow: hidden;
+
+  animation-name: anima;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.anima--div video {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.div--p {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*margin: 10% 40%;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  color: white;
+  text-shadow: 4px 4px 4px grey;
+  opacity: 0;
+
+  animation-name: p-tag;
+  animation-delay: 0s;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes p-tag {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anima {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.first--div {
+  margin: auto;
+  padding: 10px 0px;
+  background: lightgrey;
+  border-top: 7px solid whitesmoke;
+  border-bottom: 7px solid whitesmoke;
+  filter: blur(20px);
+  opacity: 0;
+
+  animation-name: strip-one;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  /*transition-timing-function: ease;*/
+  transform: translateY(-820px);
+}
+
+.second--div {
+  margin: auto;
+  padding: 5px 0px;
+  background: lightgrey;
+  border-top: 7px solid whitesmoke;
+  border-bottom: 7px solid whitesmoke;
+  filter: blur(20px);
+  opacity: 0;
+
+  animation-name: strip-two;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  /*transition-timing-function: ease;*/
+  transform: translateY(-820px);
+}
+
+@keyframes strip-one {
+  0% {
+    transform: translateY(-820px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1150px);
+    opacity: 1;
+  }
+}
+
+@keyframes strip-two {
+  0% {
+    transform: translateY(-900px);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1150px);
+    opacity: 0;
+  }
+}
+
+/*Form with Component Note with btn toggle.*/
+
+.mainapp--div {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+
+  opacity: 1;
+
+  animation-name: main-div;
+  animation-delay: 0s;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+}
+
+@keyframes main-div {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  padding: auto;
+  width: 100%;
+
+  background-color: lightgrey;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border-bottom: 2px solid dimgrey;
+}
+
+h1 {
+  width: 80%;
+  margin-left: 5%;
+  font-family: 'Consolas';
+}
+
+.secmainapp--div {
+  width: 100%;
+}
+
+.div--important {
+  width: 20%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn--important {
+  margin: 0px 0px;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  border: 1px solid dodgerblue;
+  box-shadow: 0px 3px 5px grey;
+  color: white;
+}
+
+.btn--important:hover {
+  transform: scale(1.2);
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  color: white; 
+}
+
+.btn--important:active {
+  background-color: royalblue;
+  color: white; 
+}
+
+.ul--tag {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input--search {
+  padding: 3px 5px;
+  font-size: 1rem;
+}
+
+.form--div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 200px;
+
+}
+
+.div--inputsearch {
+  margin: 20px 0px;
+  padding: 30px;
+  background: floralwhite;
+  border-radius: 15px;
+  box-shadow: 3px 3px 7px grey;
+}
+
+.lbl--search {
+  padding: 5px 10px;
+  background: lightgrey;
+  color: white;
+  border-left: 1px solid dimgrey;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px darkblue;
+}
+
+form {
+  width: 550px;
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background: floralwhite;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 3px 3px 7px grey;
+}
+
+fieldset {
+  border: 1px dashed navy;
+  border-left: 1px solid dimgrey;
+  border-radius: 0px 10px 0px 10px;
+  background: lightgrey;
+}
+
+legend {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px navy;
+}
+
+.form--display {
+  margin: 0px 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.form--display input {
+  font-size: 1.1rem;
+}
+
+.form--display label {
+  font-size: 1.1rem;
+  color: navy;
+}
+
+.btn--div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn--submit {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 5px 120px;
+
+  font-family: 'Consolas';
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 7px;
+  box-shadow: 0px 3px 5px grey;
+  color: white;
+}
+
+.btn--submit:hover {
+  transform: scale(1.2);
+  border: 1px solid royalblue;
+  background-color: royalblue ;
+  color: white;
+}
+
+.btn--submit:active {
+  background-color: lightgreen;
+  border: 1px solid lightgreen;
+  color: navy;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  background: lightgrey;
+  border-top: 2px solid dimgrey;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: auto;
+  margin-right: 18%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Consolas', cursive;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
